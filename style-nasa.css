@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin:0 2rem;
+    background-color: black;
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color: white;
+}
+
+header {
+
+}
+
+/*Menu déroulant*/
+
+
+ul > li {
+    display: inline-block;
+}
+
+#second-nav {
+    background-color: rgb(85,85,85);
+    margin-top: 1.3rem;
+    font-size: 12px;
+    padding: 2px 12px;
+    width: 90%;
+}
+
+#second-nav > li> a:hover {
+    background-color: #cec5c5;
+}
+
+nav {
+    background-image: url("stars.jpg");
+    font-size: 0.8rem;
+    position: fixed;
+    margin-left: 3.4rem;
+    width: 90%;
+    margin-top: -3rem;
+    height: 5rem;
+    z-index: 999;
+}
+
+nav > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+    margin: 0 auto;
+}
+
+nav > ul > li {
+    float: left;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 0.5rem;
+}
+
+.blue {
+    background-color: rgb(21,65,140);
+    display: none;
+    width: 9rem;
+}
+
+a:hover {
+    background-color:rgb(7,47,84) ;
+}
+
+.border {
+    border-right: grey solid 3px;
+    padding: 0 0.5rem;
+    margin-left: 1.2rem;
+}
+
+.border1 {
+    font-size: 0.6rem;
+    border-right: grey 1px solid ;
+    padding: 0 0.5rem;
+}
+/*Sous-menu*/
+
+nav li:hover .blue {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+}
+
+/*Images général*/
+
+#principal {
+    display: inline-block;
+    position: relative;
+}
+
+#l1 {
+    display: inline;
+}
+
+.img {
+    width: 50%;
+    display: inline-block;
+    z-index: 1;
+}
+
+.general {
+    width: 40%;
+    height: 250px;
+    display: inline-block;
+    position: relative;
+}
+
+.title-legend {
+    width: 40%;
+    color: white;
+    font-size: 0.7rem;
+    background: #39719e;
+    padding-inline: 10px;
+    z-index: 2;
+}
+
+.legend {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+    width: 100%;
+    height: 11%;
+    bottom: 0;
+    font-weight: bold;
+    color: black;
+    font-size: 0.6rem;
+    z-index: 2;
+    padding: 0.2rem 0;
+}
+
+#jupiter {
+    display: inline-block;
+    width: 48%;
+    height: 25rem;
+    margin-top: 1.5rem;
+    background-image: url("1-pia24818_-_jupiter_bands_leigh_slide1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.general-jupiter {
+    position: relative;
+    height: 10rem;
+    top: 22.7rem;
+}
+
+#crew3 {
+    display: inline;
+    position: absolute;
+    top: 3rem;
+    background-image: url("crew3.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 25%;
+    margin-left: 2%;
+    height: 10rem;
+    float: right;
+}
+
+.general-crew {
+    position: relative;
+    height: 15rem;
+    top: 6rem;
+}
+
+#event {
+    display: inline;
+    position: relative;
+    bottom: 415px;
+    float: right;
+    margin-top: 4.8%;
+    background: #39719e;
+    width: 22%;
+    height: 10rem;
+    font-size: 8px;
+}
+
+#sun {
+    display: inline;
+    position: relative;
+    left: 11rem;
+    bottom: 15rem;
+    background-image: url("sun.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 12rem;
+    float: right;
+    margin-top: 5%;
+}
+
+.general-sun {
+    position: relative;
+    top: 10rem;
+    height: 10rem;
+}
+
+#l2 {
+    display: inline;
+}
+
+#ozone {
+    background-image: url("ozone.png");
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+    height: 10rem;
+    margin-top: 1%;
+}
+
+.general-ozone {
+    position: relative;
+    top: 7.5rem;
+}
+
+#sarah {
+    display: inline-block;
+    position: relative;
+    background-image: url("sarah-yearicks.png");
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    width: 48%;
+    margin-left: 13rem;
+    bottom: 14.1rem;
+}
+
+.general-sarah {
+    position: relative;
+    height: 8.3rem;
+    top: 9.1rem;
+}
+
+#gamma {
+    position: relative;
+    background-image: url("gama.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+    height: 10rem;
+    float: right;
+    bottom: 13.9rem;
+}
+
+.general-gamma {
+    position: relative;
+    top: 7.3rem;
+}
+
+#l3 {
+    display: inline;
+}
+
+#webb {
+    position: relative;
+    background-image: url("webb.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 24.5%;
+    height: 10rem;
+    bottom: 13rem;
+}
+
+.general-webb {
+    position: relative;
+    top: 6.7rem;
+}
+
+#nomination {
+    position: relative;
+    background-image: url("nominatis.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 23%;
+    height: 10rem;
+    margin-left: 13rem;
+    bottom: 23rem;
+}
+
+.general-nomination {
+    position: relative;
+    top: 8.3rem;
+}
+
+#satellite {
+    position: relative;
+    background-image: url("satellite.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 23%;
+    height: 10rem;
+    float: right;
+    bottom: 33rem;
+    margin-right: 13.3rem;
+}
+
+.general-satellite {
+    position: relative;
+    top: 8.3rem;
+}
+
+#universe {
+    position: relative;
+    background-image: url("universe.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+    height: 10rem;
+    float: right;
+    bottom: 33rem ;
+    margin-right: -25rem;
+}
+
+.general-universe {
+    position: relative;
+    top: 7.5rem;
+}
+
+/* end of page*/
+
+#more {
+    position: relative;
+    background: #285a86;
+    text-align: center;
+    font-size: 12px;
+    bottom: 31rem;
+}
+
+#logo {
+    width: 8%;
+    margin-left: -1%;
+}
+
+#end > a > img{
+    position: relative;
+    width: 35%;
+    bottom: 30rem;
+}
+
+#end > p {
+    position: relative;
+    margin-left:4rem ;
+    margin-top: -2rem;
+    font-size:0.5rem ;
+    bottom: 30rem;
+}
+
+#footer > a {
+    position: relative;
+    display: inline-block;
+    color: #5d7fb9;
+    font-size: 0.5rem;
+    float: right;
+    margin-top: 1rem;
+    bottom: 30rem;
+}
+
+#footer > a:hover {
+    display: none;
+
+}
